@@ -1,0 +1,512 @@
+/* ================= Animations Start ========================== */
+.Search_bar {
+    position: relative;
+    --size-button: 40px;
+    color: white;
+  }
+  
+  .input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #023047;
+    /* box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e; */
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+    /* box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e; */
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  .Search_bar .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+  
+  .Search_bar .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  /* ------------------------------------------------------------- */
+  .New-Arricals-Buttion {
+  
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0px 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+  }
+  
+  .bell {
+    width: 13px;
+  }
+  
+  .bell path {
+    fill: rgb(0, 206, 62);
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  .New-Arricals-Buttion:hover {
+    background-color:white;
+    transition-duration: .2s;
+    color: black;
+  }
+  
+  .New-Arricals-Buttion:hover .arrow {
+    animation: slide-right .6s ease-out both;
+  }
+  /* arrow animation */
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .New-Arricals-Buttion:active {
+    transform: translate(1px , 1px);
+    transition-duration: .2s;
+  }
+  
+  /* Index - Page Search bar End */
+  
+  
+  /* Men -Page Animations */
+  .BuyNowButton {
+    --width: 100%;
+    --height: 100%;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #222;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+  }
+  
+  .BuyNowButton::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .BuyNowButton::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .BuyNowButton::after,.BuyNowButton::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .BuyNowButton:hover {
+    background: #222;
+  }
+  
+  .BuyNowButton:hover .text {
+    top: -100%;
+  }
+  
+  .BuyNowButton:hover .icon {
+    top: 0;
+  }
+  
+  .BuyNowButton:hover:before,.BuyNowButton:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .BuyNowButton:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .BuyNowButton:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  
+  
+/* ================= Animations End ============================== */
+
+
+/* ================= Style Start  ============================== */
+a{
+    text-decoration: none;
+}
+#liveToastBtn{
+    color: #FFD43B;
+    font-size:2rem;
+    cursor: pointer;
+}
+/* --------------------------------------- */
+.Footer-Container{
+    background-color: #023047;
+}
+/* --------------------------------------- */
+.Footer-Container i{
+    color: white;
+}
+
+
+/* ================= Products Page Start ============================== */
+.fa-cart-shopping , .fa-user{
+  height: 100%;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+#liveToastBtn{
+  color: #FFD43B;
+  font-size:2rem;
+  cursor: pointer;
+}
+.Main-First{
+  margin-top: 2%;
+  margin-left: 1%;
+}
+.Show-Category {
+  overflow-x: scroll;
+  scrollbar-width: none; 
+}
+.Show-Category button{
+  border: 2px solid whitesmoke;
+}
+.Show-Category button:hover{
+  border: 2px solid black;
+}
+
+
+
+/* center container in the middle */
+.Img_card :hover{
+  border: 1px solid black;
+}
+
+.Img-Derails :hover{
+  border: none;
+}
+.Img-Derails p{
+  font-size: small;
+  width: 100%;
+}
+
+/* --------------------------------------- */
+.Footer-Container{
+  background-color: #023047;
+}
+/* --------------------------------------- */
+.Footer-Container i{
+  color: white;
+}
+/* ================= Products Page End  ============================== */
+
+/* ================= About Us Start  ============================== */
+
+.fa-cart-shopping , .fa-user{
+  height: 100%;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+  
+.Details-Container h3{
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 1000;
+    font-style: italic;
+    font-size: 3rem;
+  }
+  
+/* font End*/
+
+video{
+    width: 100%;
+    
+}
+.overlayText {
+    position: absolute;
+    top: 60%;
+    left: 33.5%;
+    z-index: 1;
+  }
+  
+  #topText {
+    color: white;
+    font-size: 4rem;
+    overflow: hidden;
+  }
+  .overlayText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* --------------------------------------- */
+  .Text-Content{
+    border: 1px solid gray;
+    text-align: center;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Details-Container{
+    width: 60%;
+    /* border: 1px solid green; */
+  }
+
+  /* ------------------------------------------------- */
+  .Local{
+    /* height: 100vh; */
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Local-Text{
+    margin-top: 4%;
+    text-align: center;
+    /* border: 1px solid rebeccapurple; */
+    width: 50%;
+  }
+  .Local-Text h1{
+    overflow: hidden;
+  }
+
+
+
+
+/* -------------------- */
+/* Base styles for the tab container */
+.tab {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* border-bottom: 1px solid #ccc; */
+  background-color: transparent;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.tab::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+/* Style adjustments for buttons inside the tab container */
+.tab button {
+  flex: 0 0 auto; /* Do not grow or shrink, but allow basis to be auto */
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 12px 40px;
+  margin-right: 5px; /* Adds some space between buttons */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 0; /* Optional: if you want the buttons to have no rounded corners */
+  font-size: 2rem; /* Optional: Adjust font size */
+}
+
+/* Enhance button appearance on hover and when active */
+.tab button:hover, .tab button.active {
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+
+}
+
+/* Clear floats and setup the tab content area */
+.tabcontent {
+  width: 100%;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeIn 0.5s; /* Add a fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.tabcontent img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+  .tab button {
+    padding: 8px 20px; /* Reduce padding on smaller screens */
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+}
+
+/* -------------------------------- */
+.Main-First{
+  margin-top: 2%;
+  margin-left: 1%;
+}
+.Show-Category {
+  overflow-x: scroll;
+  scrollbar-width: none; 
+}
+.Show-Category button{
+  border: 2px solid whitesmoke;
+}
+.Show-Category button:hover{
+  border: 2px solid black;
+}
+
+
+
+/* center container in the middle */
+.Img_card :hover{
+  border: 1px solid black;
+}
+
+.Img-Derails :hover{
+  border: none;
+}
+.Img-Derails p{
+  font-size: small;
+  width: 100%;
+}
+
+/* ================= About Us End  ============================== */
+
+/* ================= Sigin Start  ============================== */
+
+.fa-cart-shopping , .fa-user{
+  height: 100%;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+/* Main */
+.AddToCartItems{
+  height: 50vh;
+}
+#FirstError ,#LastError ,#EmailtError , #PasswordError {
+  color: red;
+}
+/* main Startt */
+main{
+  height: 100%;
+}
+.form-Start{
+  display: flex;
+  justify-content: center;
+}
+.form-details{
+  /* border: 1px solid red; */
+  width: 50%; 
+}
+
+/* main End */
+
+/* ================= Sigin End  ============================== */
+
+
+/* ================= Style End  ============================== */

@@ -1,0 +1,34 @@
+.SVG-container {
+    position: relative; /* Allows absolute positioning relative to this container */
+    /* Define other styles as needed, like width and height */
+}
+
+.image-front {
+    position: absolute;
+    top: 0; /* Adjust based on desired placement */
+    left: 0; /* Adjust based on desired placement */
+    width: 100%; /* Or specific size */
+    height: 100%; /* Or specific size */
+    background-image: url('../img/sellerIng.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    z-index: 1; /* Ensures the image layer is above other content */
+}
+
+.registration{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration h2{
+    border: 2px solid #F78DA7;
+    width:60%;
+    height: 100%;
+    text-align: center;
+    margin-top: auto;
+    background-color: #F78DA7;
+    color: white;
+    
+}

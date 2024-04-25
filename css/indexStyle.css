@@ -1,0 +1,219 @@
+
+/* ================= Style ============================== */
+a{
+    text-decoration: none;
+}
+#liveToastBtn{
+    color: #FFD43B;
+    font-size:2rem;
+    cursor: pointer;
+}
+/* --------------------------------------- */
+.Footer-Container{
+    background-color: #023047;
+}
+/* --------------------------------------- */
+.Footer-Container i{
+    color: white;
+}
+
+/* ================= Index Page Style Start ============================== */
+
+.fa-cart-shopping , .fa-user{
+    height: 100%;
+    margin-left: 1rem;
+    font-size: 1.7rem;
+}
+.First {
+    /* border: 1px solid red; */
+    height: 140vh;
+    background-image: url("../img/Index-Page-Men1.webp");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: fixed;
+    overflow-x: hidden;
+}
+.navbar{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.Header-Content{
+    /* border: 1px solid teal; */
+    /* height: 141vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Header-Content-Text{
+    /* border: 1px solid white; */
+    text-align: center;
+    margin-top: 20%;
+}
+.Header-Content-Text h1{
+    font-size: 8rem;
+    color: white;
+}
+
+.Header-Content-Text p{
+    font-size:xx-large ;
+    color: white;
+}
+
+
+
+/* ----------------------------------- */
+.Main-First{
+    /* border: 1px solid blue; */
+    height: 100vh;
+
+}
+.Main-First-Row{
+    height: 100%;
+    width: 100.9%;
+}
+.Main-First-Woman{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Index_page_Main_Woman-1.webp");
+    overflow-x: hidden;
+}
+.Main-First-Woman h1{
+    font-size: 10vh;
+    color: white;
+}
+.Main-First-Man{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Index_page_Main_Men-1.webp");
+    overflow-x: hidden;
+}
+.Main-First-Man h1{
+    font-size: 10vh;
+    color: white;
+}
+
+/* -------------------------------------------- */
+.Main-Second{
+    /* border: 1px solid green; */
+    height: 100vh;
+    background-image: url("../img/Index-Page-Main-3.webp");
+    background-position: center;
+    background-position-y:top;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.Main-Second h1{
+    margin-left: 5%;
+    font-size: 20vh;
+    color: white;
+}
+.Main-Second p{
+    margin-left: 5%;
+    font-size: 4vh;
+    color: white;
+}
+.New-Arricals-Buttion-Col{
+    margin-left: 5%;
+    font-weight: bolder;
+}
+
+/* ------------------------------------------------------- */
+.Main-Third{
+    /* border: 1px solid green; */
+    height: 100vh;
+    background-image: url("../img/Index-Page-main-men-last.webp");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Main-Third h1{
+    font-size: 20vh;
+    color: white;
+}
+.Main-Third h2{
+    font-size: 17vh;
+    color: white;
+    text-align: center;
+}
+
+
+/* ================= Index Page Style End  ============================== */
+/* General styles above remain unchanged */
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .Header-Content-Text h1 {
+        font-size: 6rem; /* Smaller screens = smaller font */
+    }
+    .Header-Content-Text p,
+    .Main-First-Woman h1,
+    .Main-First-Man h1,
+    .Main-Second h1,
+    .Main-Second p,
+    .Main-Third h1,
+    .Main-Third h2 {
+        font-size: smaller; /* Adjust font size for other elements */
+    }
+    .First,
+    .Main-First-Woman,
+    .Main-First-Man,
+    .Main-Second,
+    .Main-Third {
+        background-size: cover; /* Ensure background covers the area well */
+        background-position: center; /* Center background images */
+    }
+}
+
+@media (max-width: 768px) {
+    .Header-Content-Text h1 {
+        font-size: 4rem; /* Even smaller font for tablet and below */
+    }
+    /* Adjust font sizes similarly for other elements */
+    .Header-Content-Text p,
+    .Main-First-Woman h1,
+    .Main-First-Man h1,
+    .Main-Second h1,
+    .Main-Second p,
+    .Main-Third h1,
+    .Main-Third h2 {
+        font-size: more compact; /* Further reduce font size */
+    }
+    /* You might want to adjust background positions or switch images for smaller screens */
+    .First,
+    .Main-First-Woman,
+    .Main-First-Man,
+    .Main-Second,
+    .Main-Third {
+        background-size: contain; /* Change if necessary to ensure visibility */
+    }
+}
+
+@media (max-width: 480px) {
+    .Header-Content-Text h1 {
+        font-size: 2rem; /* Very small screens need much smaller fonts */
+    }
+    /* Continue adjusting font sizes for readability */
+    .Header-Content-Text p,
+    .Main-First-Woman h1,
+    .Main-First-Man h1,
+    .Main-Second h1,
+    .Main-Second p,
+    .Main-Third h1,
+    .Main-Third h2 {
+        font-size: even more compact; /* Aim for best readability */
+    }
+    /* Adjust backgrounds for very small screens, maybe even changing the image or its positioning */
+    .First,
+    .Main-First-Woman,
+    .Main-First-Man,
+    .Main-Second,
+    .Main-Third {
+        background-size: cover; /* Ensure it covers well, adjust as needed */
+        background-position: top center; /* Might want to adjust this for better focus */
+    }
+}

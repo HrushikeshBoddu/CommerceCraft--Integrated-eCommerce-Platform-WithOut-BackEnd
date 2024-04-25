@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seller Index</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/sellerstyle.css">
+    <!-- Icons Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+  <body>
+    <header>
+        <div class="container-fulid First" >
+          <nav class="navbar navbar-expand-lg navbar-light sticky-top"> 
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../html/sellerindex.html">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSup-lightContent" aria-controls="navbarSup-lightContent" aria-ex-light="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSup-lightContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/sellerupload.html">Upload Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/sellerview.html">View Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/sellerscontactus.html">Contact Us</a>
+                  </li>
+
+                </ul>
+                <div style="margin-right: 1%;">
+                    <i class="fa-solid fa-question" id="liveToastBtn" ></i>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                              <img src="" class="rounded me-2" alt="...">
+                              <strong class="me-auto">Bootstrap</strong>
+                              <small>11 mins ago</small>
+                              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body">
+                              Hello, world! This is a toast message.
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <a href="../html/sellersigin.html"><i class="fa-solid fa-user" style="color: #FFD43B;"></i></a>
+              </div>
+            </div>
+            </nav>
+        <!-- Nav- Bar End -->
+        </div>
+          
+    </header>
+
+    <main>
+        <div class="SVG-container">
+            <div class="image-front"></div>
+            <!-- Other content goes here -->
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+                .path-0{
+                  animation:pathAnim-0 4s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-0{
+                  0%{
+                    d: path("M 0,600 L 0,90 C 136.57142857142856,87.19642857142857 273.1428571428571,84.39285714285714 396,102 C 518.8571428571429,119.60714285714286 628.0000000000001,157.625 741,176 C 853.9999999999999,194.375 970.8571428571427,193.10714285714286 1088,213 C 1205.1428571428573,232.89285714285714 1322.5714285714287,273.94642857142856 1440,315 L 1440,600 L 0,600 Z");
+                  }
+                  25%{
+                    d: path("M 0,600 L 0,90 C 106.46428571428572,55.767857142857146 212.92857142857144,21.535714285714292 337,47 C 461.07142857142856,72.46428571428571 602.7500000000001,157.625 716,196 C 829.2499999999999,234.375 914.0714285714284,225.9642857142857 1030,238 C 1145.9285714285716,250.0357142857143 1292.9642857142858,282.51785714285717 1440,315 L 1440,600 L 0,600 Z");
+                  }
+                  50%{
+                    d: path("M 0,600 L 0,90 C 143.67857142857142,70.73214285714286 287.35714285714283,51.46428571428571 389,55 C 490.64285714285717,58.53571428571429 550.2500000000001,84.87500000000003 673,124 C 795.7499999999999,163.12499999999997 981.6428571428571,215.03571428571428 1120,249 C 1258.357142857143,282.9642857142857 1349.1785714285716,298.9821428571429 1440,315 L 1440,600 L 0,600 Z");
+                  }
+                  75%{
+                    d: path("M 0,600 L 0,90 C 130.85714285714286,71.98214285714286 261.7142857142857,53.96428571428571 369,71 C 476.2857142857143,88.03571428571429 559.9999999999999,140.125 685,165 C 810.0000000000001,189.875 976.2857142857142,187.53571428571428 1109,208 C 1241.7142857142858,228.46428571428572 1340.857142857143,271.7321428571429 1440,315 L 1440,600 L 0,600 Z");
+                  }
+                  100%{
+                    d: path("M 0,600 L 0,90 C 136.57142857142856,87.19642857142857 273.1428571428571,84.39285714285714 396,102 C 518.8571428571429,119.60714285714286 628.0000000000001,157.625 741,176 C 853.9999999999999,194.375 970.8571428571427,193.10714285714286 1088,213 C 1205.1428571428573,232.89285714285714 1322.5714285714287,273.94642857142856 1440,315 L 1440,600 L 0,600 Z");
+                  }
+                }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#F78DA7"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,600 L 0,90 C 136.57142857142856,87.19642857142857 273.1428571428571,84.39285714285714 396,102 C 518.8571428571429,119.60714285714286 628.0000000000001,157.625 741,176 C 853.9999999999999,194.375 970.8571428571427,193.10714285714286 1088,213 C 1205.1428571428573,232.89285714285714 1322.5714285714287,273.94642857142856 1440,315 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.265" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><style>
+                .path-1{
+                  animation:pathAnim-1 4s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-1{
+                  0%{
+                    d: path("M 0,600 L 0,210 C 149.75,194.44642857142856 299.5,178.89285714285714 404,192 C 508.5,205.10714285714286 567.75,246.875 671,285 C 774.25,323.125 921.5,357.60714285714283 1057,382 C 1192.5,406.39285714285717 1316.25,420.69642857142856 1440,435 L 1440,600 L 0,600 Z");
+                  }
+                  25%{
+                    d: path("M 0,600 L 0,210 C 95.67857142857142,182.58928571428572 191.35714285714283,155.17857142857142 320,182 C 448.64285714285717,208.82142857142858 610.25,289.87499999999994 733,328 C 855.75,366.12500000000006 939.6428571428571,361.3214285714286 1051,372 C 1162.357142857143,382.6785714285714 1301.1785714285716,408.83928571428567 1440,435 L 1440,600 L 0,600 Z");
+                  }
+                  50%{
+                    d: path("M 0,600 L 0,210 C 140.17857142857142,215.30357142857144 280.35714285714283,220.60714285714286 378,237 C 475.64285714285717,253.39285714285714 530.75,280.87500000000006 657,304 C 783.25,327.12499999999994 980.6428571428573,345.8928571428571 1123,367 C 1265.3571428571427,388.1071428571429 1352.6785714285713,411.55357142857144 1440,435 L 1440,600 L 0,600 Z");
+                  }
+                  75%{
+                    d: path("M 0,600 L 0,210 C 137.46428571428572,204.55357142857144 274.92857142857144,199.10714285714286 381,211 C 487.07142857142856,222.89285714285714 561.7500000000001,252.125 676,270 C 790.2499999999999,287.875 944.0714285714287,294.39285714285717 1078,320 C 1211.9285714285713,345.60714285714283 1325.9642857142858,390.30357142857144 1440,435 L 1440,600 L 0,600 Z");
+                  }
+                  100%{
+                    d: path("M 0,600 L 0,210 C 149.75,194.44642857142856 299.5,178.89285714285714 404,192 C 508.5,205.10714285714286 567.75,246.875 671,285 C 774.25,323.125 921.5,357.60714285714283 1057,382 C 1192.5,406.39285714285717 1316.25,420.69642857142856 1440,435 L 1440,600 L 0,600 Z");
+                  }
+                }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#F78DA7"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,600 L 0,210 C 149.75,194.44642857142856 299.5,178.89285714285714 404,192 C 508.5,205.10714285714286 567.75,246.875 671,285 C 774.25,323.125 921.5,357.60714285714283 1057,382 C 1192.5,406.39285714285717 1316.25,420.69642857142856 1440,435 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path><style>
+                .path-2{
+                  animation:pathAnim-2 4s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-2{
+                  0%{
+                    d: path("M 0,600 L 0,330 C 107.85714285714286,310.125 215.71428571428572,290.25 343,298 C 470.2857142857143,305.75 616.9999999999999,341.125 745,382 C 873.0000000000001,422.875 982.2857142857142,469.25 1095,499 C 1207.7142857142858,528.75 1323.857142857143,541.875 1440,555 L 1440,600 L 0,600 Z");
+                  }
+                  25%{
+                    d: path("M 0,600 L 0,330 C 114.67857142857139,333.69642857142856 229.35714285714278,337.39285714285717 360,344 C 490.6428571428572,350.60714285714283 637.2500000000002,360.125 767,385 C 896.7499999999998,409.875 1009.6428571428571,450.10714285714283 1119,481 C 1228.357142857143,511.89285714285717 1334.1785714285716,533.4464285714286 1440,555 L 1440,600 L 0,600 Z");
+                  }
+                  50%{
+                    d: path("M 0,600 L 0,330 C 90.32142857142858,335.125 180.64285714285717,340.25 293,358 C 405.35714285714283,375.75 539.7499999999999,406.12500000000006 665,430 C 790.2500000000001,453.87499999999994 906.3571428571429,471.24999999999994 1034,491 C 1161.642857142857,510.75000000000006 1300.8214285714284,532.875 1440,555 L 1440,600 L 0,600 Z");
+                  }
+                  75%{
+                    d: path("M 0,600 L 0,330 C 100.53571428571428,325.30357142857144 201.07142857142856,320.60714285714283 306,337 C 410.92857142857144,353.39285714285717 520.25,390.875 662,425 C 803.75,459.125 977.9285714285713,489.8928571428571 1113,511 C 1248.0714285714287,532.1071428571429 1344.0357142857142,543.5535714285714 1440,555 L 1440,600 L 0,600 Z");
+                  }
+                  100%{
+                    d: path("M 0,600 L 0,330 C 107.85714285714286,310.125 215.71428571428572,290.25 343,298 C 470.2857142857143,305.75 616.9999999999999,341.125 745,382 C 873.0000000000001,422.875 982.2857142857142,469.25 1095,499 C 1207.7142857142858,528.75 1323.857142857143,541.875 1440,555 L 1440,600 L 0,600 Z");
+                  }
+                }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#F78DA7"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,600 L 0,330 C 107.85714285714286,310.125 215.71428571428572,290.25 343,298 C 470.2857142857143,305.75 616.9999999999999,341.125 745,382 C 873.0000000000001,422.875 982.2857142857142,469.25 1095,499 C 1207.7142857142858,528.75 1323.857142857143,541.875 1440,555 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-2"></path><style>
+                .path-3{
+                  animation:pathAnim-3 4s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                @keyframes pathAnim-3{
+                  0%{
+                    d: path("M 0,600 L 0,450 C 124.92857142857144,449.3392857142857 249.8571428571429,448.67857142857144 386,455 C 522.1428571428571,461.32142857142856 669.5000000000001,474.625 773,495 C 876.4999999999999,515.375 936.1428571428571,542.8214285714286 1040,574 C 1143.857142857143,605.1785714285714 1291.9285714285716,640.0892857142858 1440,675 L 1440,600 L 0,600 Z");
+                  }
+                  25%{
+                    d: path("M 0,600 L 0,450 C 124.92857142857142,442.9107142857143 249.85714285714283,435.82142857142856 375,454 C 500.14285714285717,472.17857142857144 625.5,515.6249999999999 735,543 C 844.5,570.3750000000001 938.1428571428573,581.6785714285714 1053,601 C 1167.8571428571427,620.3214285714286 1303.9285714285713,647.6607142857142 1440,675 L 1440,600 L 0,600 Z");
+                  }
+                  50%{
+                    d: path("M 0,600 L 0,450 C 130.75,455.30357142857144 261.5,460.60714285714283 370,475 C 478.5,489.39285714285717 564.7499999999999,512.875 681,537 C 797.2500000000001,561.125 943.5,585.8928571428572 1075,609 C 1206.5,632.1071428571428 1323.25,653.5535714285713 1440,675 L 1440,600 L 0,600 Z");
+                  }
+                  75%{
+                    d: path("M 0,600 L 0,450 C 85.28571428571428,427.625 170.57142857142856,405.25 300,425 C 429.42857142857144,444.75 602.9999999999999,506.625 721,548 C 839.0000000000001,589.375 901.4285714285716,610.2500000000001 1012,628 C 1122.5714285714284,645.7499999999999 1281.2857142857142,660.375 1440,675 L 1440,600 L 0,600 Z");
+                  }
+                  100%{
+                    d: path("M 0,600 L 0,450 C 124.92857142857144,449.3392857142857 249.8571428571429,448.67857142857144 386,455 C 522.1428571428571,461.32142857142856 669.5000000000001,474.625 773,495 C 876.4999999999999,515.375 936.1428571428571,542.8214285714286 1040,574 C 1143.857142857143,605.1785714285714 1291.9285714285716,640.0892857142858 1440,675 L 1440,600 L 0,600 Z");
+                  }
+                }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#F78DA7"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,600 L 0,450 C 124.92857142857144,449.3392857142857 249.8571428571429,448.67857142857144 386,455 C 522.1428571428571,461.32142857142856 669.5000000000001,474.625 773,495 C 876.4999999999999,515.375 936.1428571428571,542.8214285714286 1040,574 C 1143.857142857143,605.1785714285714 1291.9285714285716,640.0892857142858 1440,675 L 1440,600 L 0,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>
+        </div>
+
+        <div class="container-fulid mt-5">
+            <div class="contanier">
+                <div class="registration">
+                    <h2>Step-by-step registration guide for new sellers</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fulid mt-5">
+          <!-- <div class="container"> -->
+            <div class="container " id="featured-3">
+              <h2 class="pb-2 border-bottom">Benefits of Selling</h2>
+              <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                  <i class="fa-solid fa-check-double fa-2xl" style="color: #74C0FC;"></i>
+                  
+                  <h3 class="fs-2 text-body-emphasis mt-2">Become a Seller on Amazon</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                  </a>
+                </div>
+                <div class="feature col">
+                  <i class="fa-solid fa-book-atlas fa-2xl" style="color: #74C0FC;"></i>
+                  <h3 class="fs-2 text-body-emphasis mt-2">Beginner's guide to Selling on Amazon</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                  </a>
+                </div>
+                <div class="feature col">
+                  <i class="fa-brands fa-angellist fa-2xl" style="color: #74C0FC;"></i>
+                  <h3 class="fs-2 text-body-emphasis mt-2">Guide to Amazon Seller Central</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container " id="featured-3">
+              <h2 class="pb-2 border-bottom">Let’s Stay Together</h2>
+              <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                  <i class="fa-solid fa-volume-high fa-2xl" style="color: #74C0FC;"></i>
+                  
+                  <h3 class="fs-2 text-body-emphasis mt-2">Advertise your products</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                  </a>
+                </div>
+                <div class="feature col">
+                  <i class="fa-solid fa-truck fa-2xl" style="color: #74C0FC;"></i>
+                  <h3 class="fs-2 text-body-emphasis mt-2">Fulfillment by Amazon (FBA)</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                  </a>
+                </div>
+                <div class="feature col">
+                  <i class="fa-solid fa-money-bill-trend-up fa-2xl" style="color: #74C0FC;"></i>
+                  <h3 class="fs-2 text-body-emphasis mt-2">Refer & earn rewards</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                  <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+
+          
+          <!-- </div> --> 
+            
+
+        </div>
+        
+    </main>
+    
+      
+
+
+
+<footer  class="py-5 Footer-Container">
+    <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <h5 class="text-light">Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5 class="text-light">Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5 class="text-light">Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-4 offset-1">
+              <form>
+                <h5 class="text-light">Subscribe to our newsletter</h5>
+                <p class="text-light">Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p class="text-light">&copy; 2021 Company, Inc. All rights re-light.</p>
+            <ul class="list-un-light d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+      </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="../JavaScript/Animation.js"></script>
+  <script src="../JavaScript/addtocart.js"></script>
+  </body>
+</html>
